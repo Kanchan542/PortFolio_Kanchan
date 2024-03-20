@@ -1,12 +1,249 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<!-- icon add the left corner -->
+	<link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/686/686104.png">
+
+	<!-- bootstrap for css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- bootstrap for javascript -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<title>Kanchan Portfolio</title>
+	<!-- css file add here -->
+	<link rel="stylesheet" type="text/css" href="Style.css">
+
+
 </head>
+
 <body>
-	<h1>Hello Kanchan</h1>
-	<h1>Hello</h1>
+
+	<div class="navigation-bar">
+
+		<!-- Nav bar start here -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#"> <span class="brand scale-down-center">Kanchan</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#Home"><span class="navmenu">Home </span> <span
+								class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about"><span class="navmenu">About </span> </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skills"><span class="navmenu">Skills </span> </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#project"><span class="navmenu">Projects </span> </a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#Contact"><span class="navmenu">Contact </span> </a>
+					</li>
+
+
+				</ul>
+
+			</div>
+		</nav>
+	</div>
+	<!-- navend -->
+	<div class="main-container">
+
+
+
+		<section id="home" class="Portfolio-sections">
+			<div id="home-info">
+				<span class="info">Hi </span><br>
+				<span class="info">My name is </span><br>
+				<span class="brand myname">KANCHAN</span><br>
+				<span class="info">I am <span class="designation">Full Stack Developer</span></span><br>
+				<button href="demo.pdf" class="rsmbtn">RESUME</button>
+			</div>
+		</section>
+
+
+		<section id="about" class="Portfolio-section about-section">
+			<h1 class="heading">ABOUT</h1>
+			<div class="aboutmain">
+
+				<div class="myimage">
+					<img class="minion"
+						src="https://media.istockphoto.com/id/474935824/photo/minions-toy-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=Hnb9mpoc6-_669mnUHGdH6_sOziBFTdvtzV0efW64IA="
+						alt="minion image">
+				</div>
+				<div class="carrerobj">
+
+					<p class="carrer-info">To use my strong computer science skills to develop innovative software
+						solutions for a major tech company. </p>
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<section id="skills" class="Portfolio-section skills-section">
+			<h1 class="heading">SKILLS</h1>
+			<table class="tb1" height="450px" width="90%" border-spacing="50px">
+				<tr align="center" valign="top">
+					<div class="border-skills">
+						<td width="50%" data-aos="slide-right">
+							<h2 class="skills-subheading">Languages</h2>
+							<p class="detailed-skills">
+								core java, C, C++, Python, C#, JavaScript, HTML, CSS, SQL.
+							</p>
+						</td>
+					</div>
+					<div class="border-skills">
+						<td data-aos="slide-left">
+							<h2 class="skills-subheading">API's & Frameworks</h2>
+							<p class="detailed-skills">
+								Collection, Stream API, Rest API, Spring, Hibernates, Servlets, JDBC, SpringBoot, Spring
+								MVC, JSP, ReactJS.
+							</p>
+						</td>
+					</div>
+				</tr>
+				<tr>
+					<div class="border-skills">
+						<td data-aos="slide-right">
+							<h2 class="skills-subheading">Tools</h2>
+							<p class="detailed-skills">
+								VS Code, Eclipse IDE, Git, Gothub, Netbeams, Postman, Mysql,
+								Workbench,Maven,Tomcat,MongoDB.
+							</p>
+						</td>
+					</div>
+					<div class="border-skills">
+						<td data-aos="slide-left">
+							<h2 class="skills-subheading">Operating System</h2>
+							<p class="detailed-skills">
+								Window,Android, ios, Linux, Ubuntu, Solaris.
+							</p>
+						</td>
+					</div>
+				</tr>
+			</table>
+
+		</section>
+
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 2000
+			});
+		</script>
+		</section>
+
+
+		<section id="project" class="portfolio-section">
+			<h1 class="heading"> PROJECT</h1>
+			<div class="project-card-container">
+				<div class="card-deck">
+					<div class="card">
+						<img src="https://static.vecteezy.com/system/resources/previews/008/963/095/original/mathematics-full-color-calculator-icon-for-calculator-app-interface-design-slightly-rounded-basic-elements-of-graphic-design-plus-minus-times-equal-editable-in-eps10-free-vector.jpg"
+							class="card-img-top" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Calculator</h5>
+							<p class="card-text">I have crate simple calculator with HTML, CSS, and JavaScript. Perform
+								basic arithmetic operations.</p>
+						</div>
+					</div>
+					<div class="card">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoRL0hB-QgmSfNijOezBUS3SPgAPcnvsSzN48koT5KcQ&s"
+							class="card-img-top1" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Temperature converter</h5>
+							<p class="card-text">An easy-to-use temperature converter made with HTML, CSS, and
+								JavaScript. It helps you switch between Celsius, Fahrenheit, and Kelvin temperatures.
+							</p>
+
+						</div>
+					</div>
+					<div class="card">
+						<img src="https://5.imimg.com/data5/SELLER/Default/2023/10/355415575/ML/WE/OU/3497104/student-management-software-500x500.png"
+							class="card-img-top2" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Student Management System</h5>
+							<p class="card-text">A student management system made with HTML, CSS, and JavaScript. Keep
+								track of student information, grades, and attendance efficiently.</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- contact section -->
+		<section id="Contact" class="Portfolio-sections">
+			<h1 class="heading">CONTACT</h1>
+
+
+			<div class="main1-container">
+				<div class="contact-child">
+					<ul class="contact-info" type="none">
+						<li>&#9993;kanchantanpure111@gmail.com</li>
+						<li>&#128241;9527365614</li>
+						<li><a href="https://github.com/Kanchan542">&#xF3ED; Kanchan542</a></li>
+						<li><a href="https://www.linkedin.com/in/kanchan-tanpure-355020220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> &#xF472; KanchanTanpureLinkedIn</a></li>
+					</ul>
+				</div>
+
+
+
+
+				<div class="contact-child contact-form">
+					<form action="">
+						<div>
+							<form>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Email address</label>
+									<input type="email" class="form-control" id="exampleInputEmail1"
+										aria-describedby="emailHelp">
+
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Comment</label>
+									<textarea id="exampleInputPassword1" class="form-control"></textarea>
+								</div>
+								<div class="form-group form-check">
+									<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">Check me out</label>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<p id="footerinfo">MADE BY &copy Kanchan 2024</p>
+		</footer>
+
+
+	</div>
 </body>
+
 </html>
